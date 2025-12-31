@@ -1,12 +1,17 @@
-function Alert() {
+interface Props {
+  children: string;
+  onClose: () => void;
+}
+
+function Alert({ children, onClose }: Props) {
   return (
     <div
       className="alert alert-warning alert-dismissible fade show"
       role="alert"
     >
-      <strong>Holy guacamole!</strong> You should check in on some of those
-      fields below.
+      <strong>{children}</strong>
       <button
+        onClick={onClose}
         type="button"
         className="btn-close"
         data-bs-dismiss="alert"
@@ -15,4 +20,5 @@ function Alert() {
     </div>
   );
 }
+
 export default Alert;
