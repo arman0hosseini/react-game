@@ -11,7 +11,8 @@ const List = styled.ul`
 
 const ListItem = styled.li<ListItemProps>`
   padding: 5px;
-  background-color: ${(props) => (props.active ? "blue" : "none")};
+  background-color: ${(props: ListItemProps) =>
+    props.active ? "blue" : "none"};
 `;
 
 interface Props {
