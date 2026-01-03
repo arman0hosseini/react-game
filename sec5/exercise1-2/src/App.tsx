@@ -6,7 +6,7 @@ const App = () => {
     topping: ["Mushroom"],
   });
   function newTopping() {
-    setPizza({ ...pizza, topping: ["Cheese"] });
+    setPizza({ ...pizza, topping: [...pizza.topping, "Cheese"] });
   }
   return (
     <div>
