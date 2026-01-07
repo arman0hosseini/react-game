@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 
 const Form = () => {
-  const [person, setPerson] = useState({ name: "", age: "" });
+  const [person, setPerson] = useState({ name: "", age: 0 });
 
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
