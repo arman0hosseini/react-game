@@ -10,7 +10,7 @@ function App() {
       {buttonState && (
         <Alert onClose={() => setButtonState(false)}>Hello There!</Alert>
       )}
-      <Button onClick={() => setButtonState(true)}>Push Me</Button>
+      <Button onClick={() => setButtonState(!buttonState)}>Push Me</Button>
     </>
   );
 }

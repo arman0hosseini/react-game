@@ -14,7 +14,7 @@ function Icon({ onClick }: Props) {
   }
 
   if (status) {
-    return <FaHeart color="red" size={50} onClick={toggle}></FaHeart>;
+    return <FaHeart color="red" size={45} onClick={toggle}></FaHeart>;
   } else {
     return <CiHeart size={50} onClick={toggle}></CiHeart>;
   }
