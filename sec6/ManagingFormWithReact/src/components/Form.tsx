@@ -1,9 +1,14 @@
-import { useForm, type FieldValues } from "react-hook-form";
+import { useForm } from "react-hook-form";
+
+type FormData = {
+  name: string;
+  age: number;
+};
 
 const Form = () => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit } = useForm<FormData>();
 
-  function onSubmit(data: FieldValues) {
+  function onSubmit(data: FormData) {
     console.log(data);
   }
 
